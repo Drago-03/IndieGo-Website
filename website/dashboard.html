@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Same head content as index.html -->
+</head>
+<body class="bg-gradient">
+    <!-- Same nav as index.html -->
+    
+    <div class="container mx-auto px-6 pt-24">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <!-- Stats Card -->
+            <div class="dashboard-card p-6">
+                <h3 class="text-lg font-semibold mb-4">Bot Statistics</h3>
+                <div class="space-y-2">
+                    <p>Servers: <span id="server-count">0</span></p>
+                    <p>Users: <span id="user-count">0</span></p>
+                    <p>Commands Used: <span id="command-count">0</span></p>
+                </div>
+            </div>
+            
+            <!-- Premium Status -->
+            <div class="dashboard-card p-6">
+                <h3 class="text-lg font-semibold mb-4">Subscription</h3>
+                <div class="space-y-2">
+                    <p>Current Plan: <span id="current-plan">Free</span></p>
+                    <p>Next Billing: <span id="next-billing">N/A</span></p>
+                    <button class="bg-purple-600 hover:bg-purple-700 px-4 py-2 rounded-full mt-4">
+                        Upgrade Plan
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Recent Activity -->
+            <div class="dashboard-card p-6">
+                <h3 class="text-lg font-semibold mb-4">Recent Activity</h3>
+                <div id="activity-feed" class="space-y-2">
+                    <!-- Activity items will be dynamically loaded -->
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Same footer as index.html -->
+    
+    <script>
+        // Dashboard interactivity
+        function updateStats() {
+            // Fetch and update statistics
+        }
+        
+        function loadActivity() {
+            // Load recent activity
+        }
+        
+        // Update every 30 seconds
+        setInterval(updateStats, 30000);
+        setInterval(loadActivity, 30000);
+        
+        // Initial load
+        updateStats();
+        loadActivity();
+    </script>
+</body>
+</html> 
