@@ -1,8 +1,7 @@
 title: IndieGo Discord Bot
 description: This is the official website for the IndieGo Discord Bot.
 theme: minima
-sass:
-  style: compressed
+
 # Build settings
 markdown: kramdown
 permalink: pretty
@@ -20,15 +19,10 @@ exclude:
 
 # Author information
 author:
-<<<<<<< HEAD
-  name: Your Name
-  email: your-email@example.com
-
+  name: Drago
+  email: mantejarora@gmail.com
+  
 # Sass configuration
 sass:
   sass_dir: _sass
   style: compressed
-=======
-  name: Drago
-  email: mantejarora@gmail.com
->>>>>>> 2776e58e7dbd296518a36bb2cf9d582d4a2bd545
