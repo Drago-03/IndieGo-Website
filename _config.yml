@@ -1,0 +1,23 @@
+title: My Website
+description: This is my personal website built with Jekyll.
+theme: minima
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Exclude files from the build
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+
+# Author information
+author:
+  name: Your Name
+  email: your-email@example.com
