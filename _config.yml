@@ -1,5 +1,5 @@
-title: My Website
-description: This is my personal website built with Jekyll.
+title: IndieGo Discord Bot
+description: This is the official website for the IndieGo Discord Bot.
 theme: minima
 
 # Build settings
@@ -21,3 +21,8 @@ exclude:
 author:
   name: Your Name
   email: your-email@example.com
+
+# Sass configuration
+sass:
+  sass_dir: _sass
+  style: compressed
