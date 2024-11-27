@@ -1,6 +1,11 @@
+---
+layout: default
+title: Installation Guide
+---
+
 # Installation Guide
 
-This guide provides detailed instructions for setting up the DevAssist Discord bot.
+<!-- Content from the GitHub wiki page -->
 
 ## Prerequisites
 
