@@ -1,7 +1,124 @@
----
-layout: default
-title: Security
-permalink: /security/
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Security Policy - IndieGO</title>
+    <meta name="description" content="Security policy and vulnerability reporting for IndieGO Discord bot.">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-900 text-white">
+    <nav class="bg-gray-800 fixed w-full z-50">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center">
+                    <img src="assets/images/logo.svg" alt="IndieGO Logo" class="h-10 w-10">
+                    <span class="ml-3 text-xl font-bold">IndieGO</span>
+                    <span class="ml-2 text-sm text-gray-400">by Drago</span>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="/" class="hover:text-purple-400">Home</a>
+                    <a href="/wiki.html" class="hover:text-purple-400">Documentation</a>
+                    <a href="/dashboard.html" class="hover:text-purple-400">Dashboard</a>
+                    <a href="https://discord.gg/9bPsjgnJ5v" class="hover:text-purple-400">Discord</a>
+                </div>
+            </div>
+        </div>
+    </nav>
 
-{% include_relative SECURITY.md %}
+    <main class="pt-32 pb-20">
+        <div class="container mx-auto px-6 max-w-4xl">
+            <div class="prose prose-lg prose-invert mx-auto">
+                <h1 class="text-4xl font-bold mb-8">Security Policy</h1>
+                
+                <p class="text-gray-400 mb-8">Last Updated: November 19, 2024</p>
+                
+                <h2 class="text-2xl font-bold mb-4 text-purple-400">Supported Versions</h2>
+                <div class="bg-gray-800 p-6 rounded-lg mb-8">
+                    <table class="w-full">
+                        <thead>
+                            <tr>
+                                <th class="text-left py-2">Version</th>
+                                <th class="text-left py-2">Supported</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="py-2">1.2.1</td>
+                                <td class="py-2 text-green-400">✅ Supported</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2">1.2.0</td>
+                                <td class="py-2 text-red-400">❌ Not Supported</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2">1.1.0</td>
+                                <td class="py-2 text-red-400">❌ Not Supported</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2">1.0.0</td>
+                                <td class="py-2 text-red-400">❌ Not Supported</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <h2 class="text-2xl font-bold mb-4 text-purple-400">Reporting a Vulnerability</h2>
+                <div class="bg-gray-800 p-6 rounded-lg mb-8">
+                    <p class="mb-4">We take security seriously at IndieGO Bot. If you discover a security vulnerability, please follow these steps:</p>
+                    <ol class="list-decimal list-inside space-y-2">
+                        <li><strong>DO NOT</strong> create a public GitHub issue</li>
+                        <li>Email us at <a href="mailto:mantejarora@gmail.com" class="text-purple-400 hover:text-purple-300">mantejarora@gmail.com</a></li>
+                        <li>Include detailed information about the vulnerability</li>
+                        <li>We will acknowledge receipt within 24 hours</li>
+                        <li>We will provide a detailed response within 72 hours</li>
+                        <li>We will work with you to verify and fix the issue</li>
+                    </ol>
+                </div>
+
+                <h2 class="text-2xl font-bold mb-4 text-purple-400">Security Measures</h2>
+                <div class="bg-gray-800 p-6 rounded-lg mb-8">
+                    <ul class="list-disc list-inside space-y-2">
+                        <li>All API endpoints use HTTPS</li>
+                        <li>Sensitive data is encrypted at rest</li>
+                        <li>Regular security audits</li>
+                        <li>Automated vulnerability scanning</li>
+                        <li>Rate limiting on all endpoints</li>
+                        <li>Input validation and sanitization</li>
+                    </ul>
+                </div>
+
+                <h2 class="text-2xl font-bold mb-4 text-purple-400">Best Practices</h2>
+                <div class="bg-gray-800 p-6 rounded-lg mb-8">
+                    <ol class="list-decimal list-inside space-y-2">
+                        <li>Keep your API keys secure</li>
+                        <li>Use environment variables</li>
+                        <li>Regular token rotation</li>
+                        <li>Monitor for suspicious activity</li>
+                        <li>Keep dependencies updated</li>
+                    </ol>
+                </div>
+
+                <h2 class="text-2xl font-bold mb-4 text-purple-400">Rewards</h2>
+                <div class="bg-gray-800 p-6 rounded-lg mb-8">
+                    <p class="mb-4">We offer rewards for responsible disclosure:</p>
+                    <ul class="list-disc list-inside space-y-2">
+                        <li>Critical vulnerabilities: $500</li>
+                        <li>High severity: $200</li>
+                        <li>Medium severity: $100</li>
+                    </ul>
+                </div>
+
+                <h2 class="text-2xl font-bold mb-4 text-purple-400">Contact</h2>
+                <div class="bg-gray-800 p-6 rounded-lg">
+                    <p>
+                        <a href="mailto:mantejarora@gmail.com" class="text-purple-400 hover:text-purple-300">Email: mantejarora@gmail.com</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

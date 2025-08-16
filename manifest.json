@@ -1,0 +1,24 @@
+{
+  "name": "IndieGO - Discord Bot for Developers",
+  "short_name": "IndieGO",
+  "description": "Professional Discord bot offering code review, project management, and AI-powered assistance for developers.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#1a202c",
+  "theme_color": "#9f7aea",
+  "icons": [
+    {
+      "src": "assets/images/logo.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    },
+    {
+      "src": "favicon.svg",
+      "sizes": "32x32",
+      "type": "image/svg+xml"
+    }
+  ],
+  "categories": ["developer tools", "productivity", "discord bot"],
+  "lang": "en",
+  "dir": "ltr"
+}
