@@ -15,7 +15,7 @@
       "src": "/invite",
       "status": 302,
       "headers": {
-        "Location": "https://discord.com/api/oauth2/authorize?client_id=YOUR_BOT_CLIENT_ID&permissions=8&scope=bot"
+        "Location": "https://discord.com/api/oauth2/authorize?client_id=${BOT_CLIENT_ID}&permissions=8&scope=bot"
       }
     },
     {
