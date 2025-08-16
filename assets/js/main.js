@@ -94,7 +94,22 @@ if ('serviceWorker' in navigator) {
                 console.log('SW registered: ', registration);
             })
             .catch(registrationError => {
-                console.log('SW registration failed: ', registrationError);
+        fetch('/sw.js', { method: 'GET', cache: 'no-store' })
+            .then(response => {
+                const contentType = response.headers.get('content-type') || '';
+                if (response.ok && contentType.includes('javascript')) {
+                    return navigator.serviceWorker.register('/sw.js');
+                } else {
+                    console.warn('Service worker file not found or invalid content type. Skipping registration.');
+                }
+            })
+            .then(registration => {
+                if (registration) {
+                    console.log('SW registered: ', registration);
+                }
+            })
+            .catch(error => {
+                console.log('SW registration failed: ', error);
             });
     });
 }
